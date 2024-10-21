@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/*Nav bar styling  */
+.nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: space-between; /* Space between h2 and list items */
+    background-image: url(bg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+    border-bottom: 3px solid rgb(255, 0, 0);
+
+}
+
+h2 {
+    font-size: 6vh;
+    margin-left: 12vh;
+    color: #00f7ff;
+}
+
+.ul {
+    display: flex; /* Make ul a flex container */
+    margin-right: 3vh; /* Space to the right */
+}
+
+.li {
+    list-style: none;
+    margin-right: 6vh;
+    font-size: 4vh;
+    position: relative; /* Resets the positioning to normal flow */
+}
+
+.li:hover{
+    color: rgb(165, 252, 255);
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/*Body styling*/
+.body{
+    display: flex;
+    margin-left: 12vh;
+}
+
+.header{
+    font-size: 5vh;
+    display: block;
+    color: chartreuse;
+}
+
+li{
+    font-size: 4vh;
+    margin: 2px;
+}
+
+body{
+    background-image: url(images\ \(5\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <h2>Port Folio</h2>
+        <div class="ul">
+        <a href="index.html">
+        <div class="li">Home</div>
+        </a>
+        <a href="Achivements.html">
+        <div class="li">Achivements</div>
+        </a>
+        <a href="Contect.html">
+        <div class="li">Contect</div>
+        </a>
+        </div>
+        </div>
+    
+        <div class="body">
+            <div class="skills">
+
+                <ul>
+                    <div class="header">Web development</div>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVA Script</li>
+                    <li>Node JS</li>
+                    <li>SQL</li>
+                    <li>My SQL</li>
+                    <li>Git And GitHub</li>
+                </ul>
+
+                <ul>
+                    <div class="header">Language</div>
+                    <li>English</li>
+                    <li>Bangla</li>
+                </ul>
+
+                <ul>
+                    <div class="header">Project's</div>
+                    <li>Coming Soon.......</li>
+                </ul>
+                
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Saidul's E-Commerce Site. All rights reserved.</p>
+            </div>
+        </footer>
+    
+</body>
+</html>

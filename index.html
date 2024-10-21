@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+/*Some main style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+body{
+    background-image: url(images\ \(5\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+}
+
+/*Nav bar styling  */
+.nav {
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: space-between; /* Space between h2 and list items */
+    background-image: url(bg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+    border-bottom: 3px solid rgb(255, 0, 0);
+
+}
+
+h2 {
+    font-size: 6vh;
+    margin-left: 12vh;
+    color: #00f7ff;
+}
+
+ul {
+    display: flex; /* Make ul a flex container */
+    margin-right: 3vh; /* Space to the right */
+}
+
+li {
+    list-style: none;
+    margin-right: 6vh;
+    font-size: 4vh;
+    position: relative; /* Resets the positioning to normal flow */
+}
+
+li:hover{
+    color: rgb(165, 252, 255);
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+/*Main body style */
+.body{
+    display: flex;
+    margin: 20vh;
+    padding: 3px;
+}
+
+img{
+    height: 42vh;
+    width: 42vh;
+    margin-left: 25vw;
+    border-radius: 10%;
+    border: 10px solid yellow;
+}
+
+
+.mainline{
+    font-size: 6vh;
+    margin-bottom: 20px;
+    color: rgb(0, 190, 190);
+}
+
+.subline{
+    font-size: 4vh;
+    color: rgb(195, 255, 0);
+    width: 120%;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices with a max-width of 1200px (laptops) */
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 5vh;
+        margin-left: 8vh;
+    }
+    
+    li {
+        margin-right: 4vh;
+        font-size: 3.5vh;
+    }
+
+    .body {
+        flex-direction: column; /* Stack elements vertically */
+        margin: 10vh;
+    }
+
+    img {
+        margin-left: 0;
+        height: 36vh;
+        width: 36vh;
+    }
+}
+
+/* For tablets with a max-width of 768px */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 4.5vh;
+        margin-left: 5vh;
+    }
+    
+    li {
+        margin-right: 2vh;
+        font-size: 3vh;
+    }
+
+    .body {
+        margin: 5vh;
+        text-align: center;
+    }
+
+    .mainline {
+        font-size: 5vh;
+    }
+
+    .subline {
+        font-size: 3.5vh;
+    }
+
+    img {
+        height: 32vh;
+        width: 32vh;
+        margin-left: 0;
+        margin-top: 3vh;
+    }
+}
+
+/* For mobile devices with a max-width of 480px */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 4vh;
+        margin-left: 2vh;
+    }
+    
+    li {
+        margin-right: 1vh;
+        font-size: 2.5vh;
+    }
+
+    .body {
+        margin: 3vh;
+    }
+
+    .mainline {
+        font-size: 4.5vh;
+    }
+
+    .subline {
+        font-size: 3vh;
+    }
+
+    img {
+        height: 28vh;
+        width: 28vh;
+        margin-left: 0;
+    }
+}
+
+/* For small mobile devices (max-width: 320px) */
+@media (max-width: 320px) {
+    h2 {
+        font-size: 3vh;  /* Reduce title size to fit the screen */
+        margin-left: 1vh;  /* Minimal margin */
+        text-align: center;  /* Center the title */
+    }
+    
+    ul {
+        flex-direction: column;  /* Stack nav links vertically */
+        padding: 0;
+        margin: 0;
+        align-items: center;     /* Center align */
+    }
+
+    li {
+        font-size: 2.3vh;  /* Slightly reduce nav item font size */
+        margin: 0.5vh 0;   /* Add some spacing between list items */
+    }
+
+    .body {
+        flex-direction: column;   /* Stack image and text vertically */
+        margin: 1vh auto;         /* Reduce top/bottom margin */
+        text-align: center;       /* Center all text */
+    }
+
+    .mainline {
+        font-size: 3.5vh;   /* Make main heading slightly smaller */
+        margin-bottom: 1.5vh;
+    }
+
+    .subline {
+        font-size: 2.2vh;   /* Smaller font for subline */
+        padding: 0 2vh;     /* Add side padding for breathing room */
+        width: 100%;        /* Ensure text fits within screen */
+    }
+
+    img {
+        height: 20vh;       /* Smaller image to fit screen */
+        width: 20vh;
+        margin: 2vh auto;   /* Center image with margin on top */
+        border-width: 3px;  /* Thin border to reduce image dominance */
+    }
+
+    footer p {
+        font-size: 1.8vh;   /* Smaller footer text */
+        padding: 1vh 2vh;   /* Add padding to give space */
+    }
+
+    .nav {
+        height: auto;   /* Auto adjust the navbar height */
+        flex-direction: column;  /* Stack navbar content vertically */
+        padding: 2vh 0;   /* Add vertical padding */
+        justify-content: center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <div class="nav">
+    <h2>Port Folio</h2>
+    <ul>
+    <a href="index.html">
+    <li>Home</li>
+    </a>
+    <a href="Achivements.html">
+    <li>Achivements</li>
+    </a>
+    <a href="Contect.html">
+    <li>Contect</li>
+    </a>
+    </ul>
+    </div>
+
+
+    <div class="body">
+    <div class="txt">
+        <div class="mainline">Saidul Islam</div>
+        <div class="subline">A 15 Year's old person and Web developer. Stay in Bangladesh.
+            Working on a his E-Commarce store and doing Freelancing. Studing at a high school.</div>
+    </div>
+    <img src="att.ZoEuuMx_HnCorKZWM45GbIlBFb9_H1l0CSnYmH6Gh1k.jpg" alt="">
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Saidul's E-Commerce Site. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>
